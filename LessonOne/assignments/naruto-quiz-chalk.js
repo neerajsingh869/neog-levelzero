@@ -81,7 +81,7 @@ function startGame() {
     function play(problemNum, problem) {
         let problemOptions = problem.options;
         let userAnswerIdx = readLineSync.keyInSelect(problemOptions, 
-                                                    chalk.bold.magenta("Q" + problemNum + " " + problem.question + " "), 
+                                                    chalk.bold.magentaBright("Q" + problemNum + " " + problem.question + " "), 
                                                     {cancel: 'Skip'});
                                                     
         if (userAnswerIdx === -1) {
@@ -130,7 +130,7 @@ function displayScore() {
     console.log();
 
     for (let user of highScorers) {
-        console.log(chalk.bold.cyanBright(user.name + ' ' + chalk.magenta('=>') + ' ' + user.score));
+        console.log(chalk.bold.cyanBright(user.name + ' ' + chalk.magentaBright('=>') + ' ' + user.score));
     }
 }
 

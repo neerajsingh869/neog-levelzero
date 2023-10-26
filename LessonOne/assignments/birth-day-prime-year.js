@@ -38,7 +38,7 @@ function startCheck() {
         console.log(chalk.bold.greenBright.inverse('Yay! Your date of birth comes under Leap year.' + 
                                                     ' Share this on social media.'));
     } else {
-        console.log(chalk.bold.yellow.inverse('Sadly, Your date of birth comes under non-leap year.'));
+        console.log(chalk.bold.yellowBright.inverse('Sadly, Your date of birth comes under non-leap year.'));
     }
 }
 

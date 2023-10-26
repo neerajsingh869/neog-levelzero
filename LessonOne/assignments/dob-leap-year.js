@@ -10,7 +10,7 @@ function welcomeUser() {
 function startCheck() {
     console.log();
     
-    let userDOB = readLineSync.question(chalk.magenta("Enter your Date of Birth (as dd/mm/yyyy) - "));
+    let userDOB = readLineSync.question(chalk.magentaBright("Enter your Date of Birth (as dd/mm/yyyy)- "));
 
     console.log();
 
@@ -19,7 +19,7 @@ function startCheck() {
     } else if ( Number(userDOB.split('/')[2]) % 4 === 0 ) {
         console.log(chalk.bold.greenBright.inverse('Yay! Your date of birth comes under Leap year. Share this on social media.'));
     } else {
-        console.log(chalk.bold.yellow.inverse('Sadly, Your date of birth comes under non-leap year.'));
+        console.log(chalk.bold.yellowBright.inverse('Sadly, Your date of birth comes under non-leap year.'));
     }
 }
 
