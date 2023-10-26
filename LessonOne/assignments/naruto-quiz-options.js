@@ -95,8 +95,8 @@ function displayScore() {
     console.log('Hurray! You scored ' + score + ' points.');
     console.log();
 
-    if (score > maxScore) {
-        console.log('Congratulations! You have beaten highest score.');
+    if (score >= maxScore) {
+        console.log('Congratulations! You made high score. Send screenshot to update the max scorers list.');
         console.log();
     }
     
