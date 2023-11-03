@@ -74,7 +74,7 @@ const highScorers = [
 function welcomeUser() {
     let userName = readLineSync.question(chalk.inverse('Please Type your name:') + ' ');
     console.log();
-    console.log(chalk.bold.underline.bgBlue("Hi " + userName + ", Welcome to Naurto's Quiz!"));
+    console.log(chalk.bold.underline.bgBlue("Hi " + userName + ", Welcome to Do you know me? Quiz!"));
 }
 
 function startGame() {
