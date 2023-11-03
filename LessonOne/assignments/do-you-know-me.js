@@ -1,5 +1,5 @@
 import readLineSync from 'readline-sync';
-import chalk from 'chalks';
+import chalk from 'chalk';
 
 let score = 0;
 
