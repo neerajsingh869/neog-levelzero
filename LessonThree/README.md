@@ -1,4 +1,4 @@
-##Lesson Three of NeoG camp
+## Lesson Three of NeoG camp
 1. Built **component design** using HTML alone
    - Learned about different symantics tags
    - Learned about some other useful tags like _divs_ and _spans_
