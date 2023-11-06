@@ -23,12 +23,12 @@ hr {
 }
 
 /* containers */
-.container {
+.container--type-fluid {
     margin: 0rem 1rem;
 }
 
 .container--type-center {
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
 }
 
