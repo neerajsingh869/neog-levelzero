@@ -11,13 +11,10 @@ let commentInput = document.querySelector('#comment');
 button.addEventListener('click', e => {
     e.preventDefault();
 
-    fetch('https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json')
+    fetch('https://api.funtranslations.com/translate/yoda.json?text=Hello')
         .then(response => response.json())
         .then(data => {
-            console.log('Button clicked!');
-            console.log(commentInput.innerText);
-            console.log(data);
-            outputDiv.innerText = data.contents.text;
+            outputDiv.innerText = data.contents.translated;
         }).catch(err => {
             console.error(err);
         })
