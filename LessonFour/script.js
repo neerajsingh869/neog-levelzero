@@ -10,8 +10,9 @@ let commentInput = document.querySelector('#comment');
 
 button.addEventListener('click', e => {
     e.preventDefault();
+    console.log(commentInput.value);
 
-    fetch('https://api.funtranslations.com/translate/yoda.json?text=Hello')
+    fetch('https://api.funtranslations.com/translate/yoda.json?text=' + commentInput.value)
         .then(response => response.json())
         .then(data => {
             outputDiv.innerText = data.contents.translated;
