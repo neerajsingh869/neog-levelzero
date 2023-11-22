@@ -4,7 +4,7 @@ import chalk from 'chalk';
 function welcomeUser() {
     let userName = readLineSync.question(chalk.inverse('Please Type your name:') + ' ');
     console.log();
-    console.log(chalk.bold.underline.bgBlue("Hi " + userName + ", Welcome to Program to check Leap year DOB!"));
+    console.log(chalk.bold.underline.bgBlue("Hi " + userName + ", Welcome to Program to check if birth day construct a prime year or not!"));
 }
 
 function isPrime(num) {
@@ -35,10 +35,10 @@ function startCheck() {
         Number(parsedUserDOB[1] > 12 )) ) {
         console.log(chalk.bold.redBright.inverse('You have entered invalid date of birth.'));
     } else if ( isPrime(Number(parsedUserDOB[0] + parsedUserDOB[1])) ) {
-        console.log(chalk.bold.greenBright.inverse('Yay! Your date of birth comes under Leap year.' + 
+        console.log(chalk.bold.greenBright.inverse('Yay! Your date of birth construct a prime number.' + 
                                                     ' Share this on social media.'));
     } else {
-        console.log(chalk.bold.yellowBright.inverse('Sadly, Your date of birth comes under non-leap year.'));
+        console.log(chalk.bold.yellowBright.inverse('Sadly, Your date of birth does not construct a prime number.'));
     }
 }
 
