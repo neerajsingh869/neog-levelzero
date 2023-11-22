@@ -11,5 +11,7 @@
         - Created app for above problem statement
         - Learned how to insert HTML and Text from javascript side using `innerHTML` and `innerText`.
         - Used `click` event listener on button to welcome user and check DOB.
+    1. App to check if Date and Month of DOB construct prime number or not
+        - Very similar to 1st optional assignment.
 <!-- 3. Assignments (MarkSix and MarkSeven) -->
     
