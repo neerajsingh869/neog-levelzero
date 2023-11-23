@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400&display=swap');
+
+/* global variables */
+
+:root {
+    --primary-color: #17a2b8;
+    --dark-gray-color: #6b7280;
+    --light-gray-color: #f3f4f6;
+}
+
+/* universal styles */
+
+* {
+    font-family: 'Geologica', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* header */
+header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* footer */
+footer {
+    padding: 30px;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    color: white;
+}
+
+.footer-container {
+    width: 50%;
+    margin: auto;
+}
+
+.footer-container h2 {
+    margin-bottom: 10px;
+}
+
+/* main */
+main {
+    width: 595px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+main button {
+    margin: 15px 0px;
+    height: 45px;
+    width: 595px;
+    background-color: var(--primary-color);
+    border: 0px solid white;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#input-text-area {
+    font-size: 16px;
+}
+
+#input-text-area::placeholder {
+    font-size: 16px;
+}
+
+#translated-text-area {
+    font-size: 16px;
+}
+
+#translated-text-area::placeholder {
+    font-size: 20px;
+}
