@@ -4,8 +4,8 @@ import './App.css'
 function App() {
 
   let userName = 'Neeraj';
-  // let likeCouter = 0;
   const [likeCouter, setLikeCounter] = useState(0);
+  const [ inputText, setInputText ] = useState("");
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -19,6 +19,8 @@ function App() {
     <>
       <h1 style={{ color: 'blue' }}>Welcome { userName }!</h1>
       <button onClick={ handleClick }>Like</button>
+      <input type="text" placeholder="type whatever you want..." onChange={ (e) => setInputText(e.target.value) }/>
+      <div>{ inputText }</div>
     </>
   )
 }
