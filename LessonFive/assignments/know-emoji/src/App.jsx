@@ -45,7 +45,7 @@ function App() {
 		<>
 			<div className="app">
 				<header>
-					<h1>Know symbols emojis!</h1>
+					<h1>know symbols emojis!</h1>
 				</header>
 				<main>
 					<input 
