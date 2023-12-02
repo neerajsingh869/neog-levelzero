@@ -29,7 +29,7 @@ function App() {
     inputEmojiMeaning = "Failure to recognize this emoji."
   }
 
-  const emojiClickHandler = (emoji) => {
+  const handleEmojiClick = (emoji) => {
     setInputEmoji(emoji);
   }
 
@@ -56,7 +56,7 @@ function App() {
         { inputEmoji } { inputEmojiMeaning }
       </div>
       <div>
-        { emojiDictionaryKeys.map(emoji => <span style={{ cursor: "pointer" }} onClick={ () => emojiClickHandler(emoji) }>{ emoji }</span>) }
+        { emojiDictionaryKeys.map(emoji => <span style={{ cursor: "pointer" }} onClick={ () => handleEmojiClick(emoji) }>{ emoji }</span>) }
       </div>
     </div>
   );
