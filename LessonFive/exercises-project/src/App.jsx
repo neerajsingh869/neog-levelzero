@@ -15,6 +15,8 @@ function App() {
     "😈": "Smiley Face With Horns",
   };
 
+  let emojiDictionaryKeys = Object.keys(emojiDictionary);
+
   let inputEmojiMeaning;
 
   if (inputEmoji === "") {
