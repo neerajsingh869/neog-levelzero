@@ -16,6 +16,8 @@ function App() {
   };
 
   let emojiDictionaryKeys = Object.keys(emojiDictionary);
+  emojiDictionaryKeys = Array.from(emojiDictionaryKeys);
+  console.log(emojiDictionaryKeys.map(emoji => emoji));
 
   let inputEmojiMeaning;
 
@@ -48,6 +50,9 @@ function App() {
       />
       <div>
         { inputEmoji } { inputEmojiMeaning }
+      </div>
+      <div>
+        { emojiDictionaryKeys.map(emoji => <span>{ emoji }</span>) }
       </div>
     </div>
   );
