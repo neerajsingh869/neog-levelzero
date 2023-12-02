@@ -2,27 +2,53 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [likeCounter, setLikeCounter] = useState(0);
+  const [inputEmoji, setInputEmoji] = useState("");
 
-  let userName = 'Neeraj';
-  const [likeCouter, setLikeCounter] = useState(0);
-  const [ inputText, setInputText ] = useState("");
+  let userName = "Neeraj";
+  let color = "blue";
+  
+  const emojiDictionary = {
+    "🙃": "Up-side Down Face",
+    "😌": "Releived Face",
+    "😕": "Confused Face",
+    "😈": "Smiley Face With Horns",
+  };
 
-  const handleClick = (event) => {
-    event.preventDefault();
+  let inputEmojiMeaning;
 
-    setLikeCounter(likeCouter + 1);
-    console.log('liked');
-    console.log('total number of clicks: ' + likeCouter);
+  if (inputEmoji === "") {
+    inputEmojiMeaning = "";
+  } else if (inputEmoji in emojiDictionary) {
+    inputEmojiMeaning = emojiDictionary[inputEmoji];
+  } else {
+    inputEmojiMeaning = "Failure to recognize this emoji."
   }
 
   return (
-    <>
-      <h1 style={{ color: 'blue' }}>Welcome { userName }!</h1>
-      <button onClick={ handleClick }>Like</button>
-      <input type="text" placeholder="type whatever you want..." onChange={ (e) => setInputText(e.target.value) }/>
-      <div>{ inputText }</div>
-    </>
-  )
+    <div className="App">
+      <h1 style={{ color: color }}>Welcome {userName}!</h1>
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+
+          setLikeCounter(likeCounter + 1);
+        }}
+      >
+        Like
+      </button>
+      <input
+        type="text"
+        placeholder="Input emoji icon..."
+        onChange={(e) => {
+          setInputEmoji(e.target.value);
+        }}
+      />
+      <div>
+        { inputEmoji } { inputEmojiMeaning }
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
